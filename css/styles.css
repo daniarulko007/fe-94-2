@@ -1,0 +1,415 @@
+/*!-----Variables-----*/
+:root {
+  /* Fonts */
+  --primary-font: "Montserrat", sans-serif;
+
+  /* Colors */
+  --main-cl: #111111;
+  --main-cl-60: rgba(17, 17, 17, 0.6);
+  --main-cl-70: rgba(17, 17, 17, 0.7);
+  --accent-cl: #fd9222;
+  --violet-cl: #1e1823;
+  --beige-cl: #fcf1e0;
+  --light-cl: #fafafa;
+  --gray-cl: #4c4c4c;
+  --white-cl: #ffffff;
+  --white-cl-70: rgba(255, 255, 255, 0.7);
+}
+
+/*!-----Base styles-----*/
+/* reset start */
+body {
+  font-family: var(--primary-font);
+  color: var(--main-cl);
+  background-color: var(--light-cl);
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style-type: none;
+}
+/* reset end */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* reset end */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*!-----HEADER-----*/
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-cl);
+}
+.title-accent {
+  color: var(--accent-cl);
+}
+.subtitle {
+}
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--white-cl);
+  background-color: var(--accent-cl);
+}
+.btn:hover,
+.btn:focus {
+  color: #fd9222;
+  background-color: var(--beige-cl);
+}
+.btn-primary {
+  background-color: transparent;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  color: var(--accent-cl);
+  background-color: transparent;
+}
+.btn-secondary {
+  font-size: 18px;
+  color: var(--main-cl);
+  background-color: transparent;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: var(--white-cl);
+  background-color: var(--accent-cl);
+}
+
+/*!-----HEADER-----*/
+.header {
+}
+.header-navigation {
+}
+.header-logo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+
+.header-logo-italic {
+  font-style: italic;
+}
+.header-menu-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14; /* 16/14 */
+  letter-spacing: 0.2em; /* 0.28/14 */
+}
+
+/*!-----HERO-----*/
+.hero {
+  background-color: var(--main-cl-60);
+}
+.hero-title {
+  color: var(--white-cl);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21; /* 34/28 */
+  letter-spacing: -0.03em; /* 0.84/28 */
+}
+.hero-btn {
+  color: var(--white-cl);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+}
+.hero-link-btn {
+  color: var(--white-cl);
+  font-size: 14px;
+  font-weight: 600;
+}
+.hero-down-btn {
+  color: var(--white-cl);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29; /* 128.571% */
+  letter-spacing: -0.03em;
+}
+
+/*!-----ADVANTAGES-----*/
+
+.advantages {
+  background-color: var(--violet-cl);
+}
+
+.advantages-list {
+}
+.advantages-item {
+}
+.advantages-subtitle {
+  color: var(--white-cl);
+  font-size: 18px;
+  font-weight: 600;
+}
+.advantages-item-text {
+  color: var(--white-cl-70);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1, 29; /* 128.571% */
+  letter-spacing: -0.02em;
+}
+
+/*!-----INGREDIENTS-----*/
+.ingridients {
+}
+.ingridients-title {
+}
+.title {
+}
+.title-accent {
+}
+.ingridients-list {
+}
+.list {
+}
+.ingridients-item {
+}
+.ingridients-img {
+}
+.ingridients-caption {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  /* identical to box height, or 129% */
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+/*!-----MADE-----*/
+.made {
+}
+.made-title {
+}
+.title {
+}
+.title-accent {
+}
+.made-left-side {
+}
+.made-img {
+}
+.made-right-side {
+  background-color: var(--white-cl);
+}
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.made-list {
+}
+.made-item {
+}
+.made-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+/*!-----PRODUCTS-----*/
+.products {
+}
+.products-title {
+}
+.title {
+}
+.title-accent {
+}
+.products-list {
+}
+.list {
+}
+.product-item {
+  background-color: var(--white-cl);
+}
+.products-pic {
+}
+.products-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.product-desc {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+
+  color: var(--main-cl-70);
+}
+.products-cost {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  background-color: var(--light-cl);
+}
+
+/*!-----Bestsellers-----*/
+.bestsellers {
+}
+.bestsellers-title {
+}
+.title {
+}
+.accent {
+}
+.bestsellers-list {
+}
+.list {
+}
+.bestsellers-item {
+  background-color: var(--white-cl);
+}
+}
+.bestsellers-picture {
+}
+.bestsellers-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+/*!-----Reviews-----*/
+.reviews {
+}
+.reviews-title {
+}
+.title {
+}
+.title-accent {
+}
+.reviews-list {
+}
+.list {
+}
+.reviews-item {
+}
+.reviews-avatar {
+}
+.reviews-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+}
+.reviews-text {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--main-cl-70);
+}
+.reviews-btn {
+}
+.btn {
+}
+.btn-secondary {
+}
+
+/*!-----FOOTER-----*/
+.footer {
+  background-color: var(--violet-cl);
+}
+.footer-top {
+}
+.footer-heading {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--white-cl);
+}
+.title-accent {
+}
+.footer-socials {
+}
+.socials {
+}
+.socials-caption {
+}
+.socials-list {
+}
+.list {
+}
+.socials-item {
+}
+.socials-link {
+}
+.link {
+}
+.contacts-caption {
+  .contacts-caption
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: var(--white-cl);
+}
+.contacts-data {
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-link {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--white-cl);
+}
+.footer-bottom {
+}
+.footer-navigation {
+}
+.navigation {
+}
+.navigation-menu {
+}
+.navigation-item {
+}
+.navigation-link {
+}
+.light {
+}
