@@ -17,7 +17,7 @@
 }
 
 /*!-----Base styles-----*/
-/* reset start */
+/* reset start*/
 body {
   font-family: var(--primary-font);
   color: var(--main-cl);
@@ -50,22 +50,7 @@ button {
   overflow: hidden;
 }
 
-/* reset end */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/*!-----HEADER-----*/
+/*!-----Components styles-----*/
 .title {
   font-weight: 600;
   font-size: 24px;
@@ -89,7 +74,7 @@ button {
 }
 .btn:hover,
 .btn:focus {
-  color: #fd9222;
+  color: var(--accent-cl);
   background-color: var(--beige-cl);
 }
 .btn-primary {
@@ -109,6 +94,50 @@ button {
 .btn-secondary:focus {
   color: var(--white-cl);
   background-color: var(--accent-cl);
+}
+
+/*!-----NAVIGATION-----*/
+.navigation {
+}
+.navigation-menu {
+}
+.navigation-item {
+}
+.navigation-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-cl);
+}
+.navigation-link.light {
+  color: var(--white-cl);
+}
+.navigation-link.dark {
+  color: var(--main-cl);
+}
+
+/*!-----SOCIALS----*/
+
+.socials {
+}
+.socials-caption {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+
+  color: var(--white-cl);
+}
+.socials-list {
+}
+.socials-item {
+}
+.socials-link {
+  color: var(--white-cl);
 }
 
 /*!-----HEADER-----*/
@@ -299,7 +328,7 @@ button {
 .bestsellers-item {
   background-color: var(--white-cl);
 }
-}
+
 .bestsellers-picture {
 }
 .bestsellers-name {
@@ -379,7 +408,6 @@ button {
 .link {
 }
 .contacts-caption {
-  .contacts-caption
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -387,6 +415,7 @@ button {
   color: var(--white-cl);
 }
 .contacts-data {
+  font-style: normal;
 }
 .contacts-list {
 }
